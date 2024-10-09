@@ -2,8 +2,8 @@
 .PHONY: $(MAKECMDGOALS)
 
 
-install:
-	@pip3 install -r requirements.txt
+setup:
+	@bash setup.sh
 
 run:
 	@python3 -m src
