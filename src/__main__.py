@@ -12,4 +12,4 @@ if __name__ == "__main__":
     load_dotenv()
     port = int(getenv("PORT", "2004"))
     app.logger.info("Everything's Okay was initialized 🚀")
-    app.run(host="0.0.0.0", port=port, debug=True, load_dotenv=True)
+    app.run(host="0.0.0.0", port=port, load_dotenv=True)
