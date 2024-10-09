@@ -21,19 +21,32 @@ Technology in Systems Analysis and Development - <a href="https://www.ifms.edu.b
 
 ---
 
+## Configuration
+
+The **App** will run, by default, with the following options:
+
+| **Parameter**  | **Description**                                                                                 | **Default** |
+| -------------- | ----------------------------------------------------------------------------------------------- | ----------- |
+| `debug`        | Enable the debug mode                                                                           | `false`     |
+| `host`         | Sets the hostname to listen on. <br>Setting `0.0.0.0` make the application externally available | `0.0.0.0`   |
+| `port`         | Sets the web server port on which the application will run                                      | `8000`      |
+
+You can also create a `.env` file to configure the port on which the application will run:
+
+```dotenv
+PORT=2004
+```
+
 ## Run locally with Pip
 
-You will need <a href="https://www.python.org/downloads/release/python-3117/" target="_blank" rel="external" title="Python3.11">Python3 `v3.11`</a>, <a href="https://pip.pypa.io/en/stable/installation/" target="_blank" rel="external" title="Pip">Pip</a> and <a href="https://docs.python.org/3/library/venv.html" target="_blank" rel="external" title="Pip">Venv</a> installed to run the **Flask** application.
+You will need <a href="https://www.python.org/downloads/release/python-3117/" target="_blank" rel="external" title="Python3.11">Python3 `v3.11`</a> with <a href="https://pip.pypa.io/en/stable/installation/" target="_blank" rel="external" title="Pip">Pip</a> and <a href="https://docs.python.org/3/library/venv.html" target="_blank" rel="external" title="Pip">Venv</a> installed to run the **Flask** application.
 
 ```bash
-# Setup Venv
+# Setup Venv and Install dependencies
 make setup
 
 # Activate Venv
 source .venv/bin/activate
-
-# Install dependencies
-(.venv) make install
 
 # Run the App locally
 (.venv) make run
