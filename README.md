@@ -1,11 +1,11 @@
-# Everything's Okay
+# Everything's Fine
 
 <p align="center">
-  <em>A Flask app just to show that everything's okay when you access a URL</em>
+  <em>A Flask app just to show that everything's fine when you access a URL</em>
 </p>
 <p align="center">
-  <a href="https://github.com/mauprogramador/everythings-okay/releases/tag/v1.0.0" target="_blank" rel="external" title="App Version">
-    <img src="https://img.shields.io/github/v/tag/mauprogramador/everythings-okay?logo=github&label=App Version&color=E9711C" alt="App Version">
+  <a href="https://github.com/mauprogramador/everythings-fine/releases/tag/v1.0.0" target="_blank" rel="external" title="App Version">
+    <img src="https://img.shields.io/github/v/tag/mauprogramador/everythings-fine?logo=github&label=App Version&color=E9711C" alt="App Version">
   </a>
   <a href="https://www.python.org/" target="_blank" rel="external" title="Python3 Version">
     <img src="https://img.shields.io/badge/Python-v3.11-3776AB?logo=python&logoColor=FFF" alt="Python3 Version">
@@ -25,11 +25,11 @@ Technology in Systems Analysis and Development - <a href="https://www.ifms.edu.b
 
 The **App** will run, by default, with the following options:
 
-| **Parameter**  | **Description**                                                                                 | **Default** |
-| -------------- | ----------------------------------------------------------------------------------------------- | ----------- |
-| `debug`        | Enable the debug mode                                                                           | `false`     |
-| `host`         | Sets the hostname to listen on. <br>Setting `0.0.0.0` make the application externally available | `0.0.0.0`   |
-| `port`         | Sets the web server port on which the application will run                                      | `8000`      |
+| **Parameter** | **Description**                                                                                 | **Default** |
+| ------------- | ----------------------------------------------------------------------------------------------- | ----------- |
+| `debug`       | Enable the debug mode                                                                           | `false`     |
+| `host`        | Sets the hostname to listen on. <br>Setting `0.0.0.0` make the application externally available | `0.0.0.0`   |
+| `port`        | Sets the web server port on which the application will run                                      | `8000`      |
 
 You can also create a `.env` file to configure the port on which the application will run:
 

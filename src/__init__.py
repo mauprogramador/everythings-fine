@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 """
-Everything's Okay
+Everything's Fine
 
-A Flask app just to show that everything's okay when you access a URL
+A Flask app just to show that everything's fine when you access a URL
 """
 
 __version__ = "1.0.0"

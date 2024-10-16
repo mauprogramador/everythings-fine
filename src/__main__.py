@@ -11,5 +11,5 @@ from src.app import app
 if __name__ == "__main__":
     load_dotenv()
     port = int(getenv("PORT", "2004"))
-    app.logger.info("Everything's Okay was initialized 🚀")
+    app.logger.info("Everything's Fine was initialized 🚀")
     app.run(host="0.0.0.0", port=port, load_dotenv=True)
