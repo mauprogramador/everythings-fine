@@ -6,10 +6,15 @@ import flask_cors  # pylint: disable=w0611 # noqa: F401
 from dotenv import load_dotenv
 
 from src.app import app
+from src.logger import FlaskLoggerConfig
+
+
+load_dotenv()
+PORT = int(getenv("PORT", "2004"))
+LOGGING_FILE = bool(getenv("LOGGING_FILE", None))
 
 
 if __name__ == "__main__":
-    load_dotenv()
-    port = int(getenv("PORT", "2004"))
-    app.logger.info("Everything's Fine was initialized 🚀")
-    app.run(host="0.0.0.0", port=port, load_dotenv=True)
+    FlaskLoggerConfig(LOGGING_FILE)
+    app.logger.info("\033[93mEverything's Fine was initialized 🚀\033[m")
+    app.run(host="0.0.0.0", port=PORT, load_dotenv=True)
