@@ -25,16 +25,18 @@ Technology in Systems Analysis and Development - <a href="https://www.ifms.edu.b
 
 The **App** will run, by default, with the following options:
 
-| **Parameter** | **Description**                                                                                 | **Default** |
-| ------------- | ----------------------------------------------------------------------------------------------- | ----------- |
-| `debug`       | Enable the debug mode                                                                           | `false`     |
-| `host`        | Sets the hostname to listen on. <br>Setting `0.0.0.0` make the application externally available | `0.0.0.0`   |
-| `port`        | Sets the web server port on which the application will run                                      | `8000`      |
+| **Parameter**  | **Description**                                                                                 | **Default** |
+| -------------- | ----------------------------------------------------------------------------------------------- | ----------- |
+| `debug`        | Enable the debug mode                                                                           | `false`     |
+| `host`         | Sets the hostname to listen on. <br>Setting `0.0.0.0` make the application externally available | `0.0.0.0`   |
+| `port`         | Sets the web server port on which the application will run                                      | `8000`      |
+| `logging_file` | Enable saving logs to files                                                                     | `false`     |
 
-You can also create a `.env` file to configure the port on which the application will run:
+You can also create a `.env` file to configure the **port** on which the application will run and whether it will **save the logs to files**:
 
 ```dotenv
 PORT=2004
+LOGGING_FILE=True
 ```
 
 ## Run locally with Pip
